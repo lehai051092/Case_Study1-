@@ -6,8 +6,15 @@
 
     <style type="text/css">
         Button {
-            width: 100px;
-            height: 100px;
+            background-color: wheat; /* Green */
+            border: 1px solid green;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            width: 150px;
         }
 
         div {
@@ -24,11 +31,6 @@
         img {
             cursor: url("icon2.jpg"), auto;
         }
-
-        /*h3 {*/
-        /*    text-align: center;*/
-        /*}*/
-
     </style>
 </head>
 <body>
@@ -37,7 +39,7 @@
 <button type="reset" onclick="reset()">Reset</button>
 <h3 id="displayScocer"></h3>
 <div id="displayTable" style="display: none">
-<table border="1">
+<table border="1" style="background: url(background.jpg)">
         <tr>
             <td>
                 <div id="game1"></div>
