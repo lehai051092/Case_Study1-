@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slap The Mouse</title>
+
+    <style type="text/css">
+        Button {
+            width: 100px;
+            height: 100px;
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+        }
+        table {
+            background-color: saddlebrown;
+        }
+
+        body {
+            cursor: url("icon.jpg"), auto;
+        }
+
+        /*h3 {*/
+        /*    text-align: center;*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+<button id="start" onclick="start()">Start</button>
+<button id="quit" onclick="quit()" hidden>Close</button>
+<button type="reset" onclick="reset()">Reset</button>
+<h3 id="displayScocer"></h3>
+<div id="displayTable" style="display: none">
+<table border="1">
+        <tr>
+            <td>
+                <div id="game1"></div>
+            </td>
+            <td>
+                <div id="game2"></div>
+            </td>
+            <td>
+                <div id="game3"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="game4"></div>
+            </td>
+            <td>
+                <div id="game5"></div>
+            </td>
+            <td>
+                <div id="game6"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="game7"></div>
+            </td>
+            <td>
+                <div id="game8"></div>
+            </td>
+            <td>
+                <div id="game9"></div>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+    <script src="RatHole.js"></script>
+    <script src="gameboard.js"></script>
+</html>
