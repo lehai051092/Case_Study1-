@@ -27,11 +27,12 @@ function checkRabbit() {
         document.getElementById(id).innerHTML = "";
     }
 }
+
 let clear;
 
 function start() {
     clearScreen();
-    clear = setInterval(checkRabbit,500);
+    clear = setInterval(checkRabbit, 500);
     document.getElementById('quit').hidden = false;
     document.getElementById('start').hidden = true;
     document.getElementById('easy').hidden = false;
@@ -42,6 +43,7 @@ function start() {
 function clearScreen() {
     clearInterval(clear);
 }
+
 function quit() {
     reset();
     document.getElementById('displayTable').style.display = "none";
@@ -51,7 +53,7 @@ function quit() {
 
 function increaseScore() {
     ++countScore;
-    let  total = countScore * 1000;
+    let total = countScore * 1000;
     document.getElementById('displayScocer').innerText = "Điểm " + total;
     if (countScore === 10) {
         alert("Bạn đã chiến thắng");
