@@ -55,7 +55,7 @@ function increaseScore() {
     document.getElementById('displayScocer').innerText = "Điểm " + total;
     if (countScore === 10) {
         alert("Bạn đã chiến thắng");
-        reset();
+        quit();
     }
 }
 
