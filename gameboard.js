@@ -30,9 +30,12 @@ function checkRabbit() {
 let clear;
 
 function start() {
+    clearScreen();
     clear = setInterval(checkRabbit,500);
     document.getElementById('quit').hidden = false;
     document.getElementById('start').hidden = true;
+    document.getElementById('easy').hidden = false;
+    document.getElementById('fast').hidden = false;
     document.getElementById('displayTable').style.display = "Block";
 }
 
@@ -57,9 +60,18 @@ function increaseScore() {
 }
 
 function reset() {
-    clearScreen();
     countScore = 0;
     document.getElementById('displayScocer').innerText = "Điểm " + "";
     document.getElementById('quit').hidden = true;
     document.getElementById('start').hidden = false;
+}
+
+function easy() {
+    clearScreen();
+    clear = setInterval(checkRabbit, 750);
+}
+
+function fast() {
+    clearScreen();
+    clear = setInterval(checkRabbit, 250);
 }
